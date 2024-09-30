@@ -40,7 +40,7 @@ router.post('/upload', upload.single('image'), async (req, res) => {
 
 
             const worker = await createWorker('eng');
-            const ret = await worker.recognize(`https://airback.onrender.com/${cb}`);
+            const ret = await worker.recognize(`https://airdealback.onrender.com/${cb}`);
 
             console.log("ret.data.text", ret.data.text);
 
